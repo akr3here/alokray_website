@@ -491,3 +491,19 @@ footer a:hover { color: var(--rust); }
   nav a { padding: 6px 7px; }
   .essay-head h1 { font-size: 1.7rem; }
 }
+/* ── AYYY PAGE ───────────────────────────── */
+
+.ayy-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+.ayy-text {
+  font-family: var(--serif);
+  font-size: clamp(4rem, 12vw, 10rem);
+  color: var(--ink);
+  text-align: center;
+}
