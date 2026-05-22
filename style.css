@@ -494,16 +494,40 @@ footer a:hover { color: var(--rust); }
 /* ── AYYY PAGE ───────────────────────────── */
 
 .ayy-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: var(--paper);
+}
+
+.ayy-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
 
 .ayy-text {
   font-family: var(--serif);
-  font-size: clamp(4rem, 12vw, 10rem);
+  font-size: clamp(5rem, 14vw, 11rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
   color: var(--ink);
+
   text-align: center;
+
+  opacity: 0.96;
+
+  animation: floatIn 0.8s ease;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 0.96;
+    transform: translateY(0);
+  }
 }
